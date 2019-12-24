@@ -1,0 +1,22 @@
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function imc(peso, altura) {
+		var imc = peso / (altura*altura);
+		mostra("IMC é: " + imc);
+		mostra("Entre 18,5 e 24,9‎: ‎Normal");
+		mostra("Entre 30,0 e 39,9‎: ‎Obesidade");
+		mostra("Entre 25,0 e 29,9‎: ‎Sobrepeso");
+		mostra("Menor que 18,5‎: ‎Magreza");
+	}
+
+	imc(104, 1.87);
+	
+</script>
