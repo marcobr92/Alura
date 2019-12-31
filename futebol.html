@@ -15,6 +15,22 @@
 		var empates = parseInt(prompt(nome + " informe o numero de empates da equipe"));
 		pontos = (vitorias *3) + empates;
 		alert(nome + " a equipe " + nomeEquipe + " teve " + pontos +" pontos esse ano.");
+		mostra(nome + " a equipe " + nomeEquipe + " teve " + pontos +" pontos esse ano.");
+
+		var validaAnoAnterior = parseInt(prompt(nome + " deseja comparar com o ano anterior? Digite '1' para Sim ou '0' para não"));
+			if (validaAnoAnterior == 1){
+				var pontosAnoAnterior = parseInt(prompt(nome + " informe a quantidade de pontos da equipe " + nomeEquipe + " no ano anterior"));
+				if (pontosAnoAnterior == pontos){
+					mostra(nomeEquipe + " teve a mesma quantidade de pontos esse ano e no ano passado");
+				}else{
+					if (pontosAnoAnterior < pontos){
+						mostra(nomeEquipe + " fez mais pontos esse ano");
+					}else{
+						mostra(nomeEquipe + " fez menos pontos");
+					}
+				}
+			}
+		
 
 	
 </script>
