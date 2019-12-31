@@ -14,10 +14,14 @@
 
 	}
 
-		mostra("IMC é: " + imc(100, 1.87));
+		var nome = prompt("Ola! Informe seu nome");
+		var peso = prompt(nome + " informe seu peso");
+		var altura = prompt(nome + " informe sua altura");
+
+		mostra(nome + " seu IMC é: " + imc(peso, altura));
 		mostra("Entre 18,5 e 24,9‎: ‎Normal");
+	    mostra("Entre 25,0 e 29,9‎: ‎Sobrepeso");
 		mostra("Entre 30,0 e 39,9‎: ‎Obesidade");
-		mostra("Entre 25,0 e 29,9‎: ‎Sobrepeso");
 		mostra("Menor que 18,5‎: ‎Magreza");
 	
 </script>
